@@ -57,4 +57,10 @@
 		<PackageReference Include="SQLitePCLRaw.provider.sqlite3" Version="2.1.0-pre20220207221914" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Data\" />
+	  <Folder Include="Models\" />
+	  <Folder Include="Views\" />
+	</ItemGroup>
+
 </Project>
