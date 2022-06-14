@@ -16,6 +16,10 @@ namespace TodoList
             instance = new Lazy<Task<T>>(() => Task.Run(factory));
         }
 
+        public AsyncLazy(Func<Task<T>> factory)
+        {
+            instance = new Lazy<Task<T>>(() => Task.Run(factory));
+        }
 
         public TaskAwaiter<T> GetAwaiter()
         {
